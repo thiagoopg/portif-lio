@@ -1,0 +1,237 @@
+/*
+Cinza Escuro:       #292929
+Cinza Claro:        #E8E8E8
+Branco Fosco:       #F6F6F6
+Amarelo Pastel:     #F4F440
+Amarelo Claro:      #FFFF9B
+*/
+
+/*Comandos Iniciais Base*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #292929;
+    color: #F4F440 ;
+}
+/*Ajustes no Body e Html*/
+html{
+    position: relative;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+body {
+    font-size: 1vw;
+    font-family: sans-serif;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: #292929;
+}
+/*Cabeçalho*/
+header{
+    height: 7%;
+    width: 100%;
+    position:fixed;
+    color: #F6F6F6;
+    left: 0;
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.2);
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .header .rightButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+header .header p {
+    padding: 1rem;
+}
+/*Corpo*/
+.body *{
+    list-style: none;
+}
+/*Parte da foto e descrição base minha*/
+.sobre-mim{
+    padding: 3vw 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    border-bottom: #F4F440 solid 1px;
+}
+.sobre-mim *{
+    padding: 1rem;
+}
+.eu{
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.minha-foto{
+    width: 80%;
+    height: 80%;
+    clip-path: circle(35% at center);
+    align-self: center;
+
+}
+.nome{
+    text-align: center;
+    color: white;
+}
+.texto-sobre-mim *{
+    text-align: left;
+}
+.titulo-redes{
+    align-self: end;
+}
+.titulo-redes *{
+    text-align: center;
+}
+.linksPrincipais a{
+    text-decoration: none;
+}
+.linksPrincipais{
+    justify-self: center;
+    align-self: center;
+}
+.link{
+    clip-path: circle(1000% at center);
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgb(91, 8, 112);
+}
+/*Parte das principais linguagens*/
+.linguagens{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    border-bottom: #F4F440 solid 1px;
+    margin-bottom: 20px;
+}
+.linguagens li{
+    margin: auto;
+    padding: 1rem;
+}
+/*Projetos que eu fiz*/
+.projetos{
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.projeto{
+    position: relative;
+    margin: 0 0.625rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 10px;
+   
+}
+.projeto *{
+    margin: 0;
+    display: block;
+    position: relative
+}
+/*Parte superior*/
+.projeto .superior{
+    width: 50%;
+}
+.imagem-do-Projeto{
+    width: 100%;
+    height: auto;
+    position: block;
+}
+.projeto .titulo{
+    top: 0;
+    left: 0;
+    margin: 0.625rem;
+    font-size: 2rem;
+    position: absolute;
+    background-color: rgba(148, 144, 144, 0.7);
+    padding: 10px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+/*Parte inferior*/
+.projeto .inferior{
+    display: flex;
+    flex-direction: column;
+    background-color: #292929;
+    color: white;
+    font-size: 1rem;
+}
+/*Links*/
+.links{
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 66% 18%;
+    justify-content: space-between;
+}   
+.button {
+    color: white;
+    display: inline-block;
+    background-color: #202122;
+    padding: 0.625rem 1rem;
+    margin:  1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: #F4F440 solid 1px;
+}
+.button:hover {
+    background-color: #18191c;
+}
+.mostrarMais{
+    align-self: end;
+}
+/*Linguágens*/
+.projeto .linguagensProjeto{
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.projeto .linguagensProjeto .linguagem{
+    padding: 0.625rem;
+    margin: 0.225rem;
+    background-color: #2e2f34;
+}
+
+
+
+
+/*fazer depois*/
+@media screen and (min-width: 380px) {
+    .projeto {
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .projeto {
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .projeto {
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+}
